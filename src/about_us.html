@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('image/city.jpg') no-repeat center center/cover;
+        }
+        .container {
+            border-radius: 15px;
+            display: flex;
+            width: 80%;
+            height: 80%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .left {
+            width: 50%;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+        .right {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .right img {
+            border-radius: 15px;
+            max-width: 50%; 
+            height: auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .header .nav {
+            font-size: 18px;
+        }
+        .header .nav a {
+            color: #000;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .content {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .content h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .content .line {
+            width: 50px;
+            height: 2px;
+            background-color: #000;
+            margin-bottom: 20px;
+        }
+        .content .contact {
+            margin-top: 40px;
+        }
+        .content .contact div {
+            margin-bottom: 10px;
+        }
+        .content .contact div span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="header">
+                <div class="nav">
+                    <a href="index1.html">Homepage</a>
+                </div>
+            </div>
+            <div class="content">
+                <h1>Traveler Advisories</h1>
+                <div class="line"></div>
+                <h2>Nur Aishah Nieza</h2>
+                <p>Traveler Advisories is built to help travelers get weather information and plan their itinerary throughout their travel.</p>
+                <div class="contact">
+                    <div><span>Contact:</span></div>
+                    <div><span>Email:</span> esah@gmail.com</div>
+                    <div><span>Phone:</span> +123456789</div>
+                    <div><span>Instagram:</span> @esahcumil</div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="image/mypic.jpg" alt="Nur Aishah Nieza" />
+        </div>
+    </div>
+</body>
+</html>

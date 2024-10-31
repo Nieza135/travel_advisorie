@@ -1,0 +1,130 @@
+<html>
+ <head>
+  <title>
+   Traveler Advisories
+  </title>
+  
+  <style>
+   body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+}
+
+.header img {
+    height: 30px;
+}
+
+.header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
+
+.container {
+    text-align: center;
+    color: white;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('image/city.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 4em;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 0 0 5px #fff,
+        0 0 10px rgb(222, 70, 96),
+        0 0 20px rgb(222, 70, 96),
+        0 0 30px rgb(222, 70, 96),
+        0 0 40px rgb(222, 70, 96),
+        0 0 55px rgb(222, 70, 96),
+        0 0 70px rgb(222, 70, 96);
+}
+
+.hero p {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 10px 0 30px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+
+.input-field {
+    padding: 10px 20px; 
+    border: 2px solid #ccc;
+    border-radius: 20px; 
+    font-size: 1.2em; 
+    width: 300px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s; 
+}
+
+.input-field:focus {
+    border-color: #fdd835; 
+    outline: none; 
+}
+
+.btn {
+    background-color: #0b2b84; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.btn:hover {
+    background-color: #186fd1; /* Change background color on hover */
+}
+
+       
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <nav>
+    <a href="#">Homepage</a>
+    <a href="about_us.html">About me</a>
+    <a href="#">FAQ</a>
+   </nav>
+  </div>
+  <div class="hero">
+   <div class="container">
+    <h1>
+     Ready to Explore the World
+    </h1>
+    <p>
+     plan your journey with Traveler Advisories.
+    </p>
+    <div class="search-container">
+        <input type="text" id="locationinput" placeholder="Enter location name" class="input-field">
+    </div>
+    <button class="btn"onclick="fetchWeather()">Weather Info</button>
+  <script src="renderer.js"></script>
+ </body>
+</html>
